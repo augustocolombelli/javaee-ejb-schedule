@@ -2,11 +2,11 @@
 Example of scheduled tasks with EJB. 
 
 ### Something about 
-The class must be defined as a SessionBean. We are using the @Singleton for not create a pool in EJB Container.
+The class must be defined as a Session Bean. We are using the @Singleton for not create a pool in EJB Container.
 
-The @Startup annotation defines the SessionBean must be started together to the EJB Container.
+The @Startup annotation defines the Session Bean must be started together to the EJB Container.
 
-The method with @PostConstrut annotation is executed after the SessionBean is constructed.
+The method with @PostConstrut annotation is executed after the Session Bean is constructed.
 
 The method that needs to execute as a Scheduled task should be annotated with @Schedule. In our example, this task is executed every 5 seconds. 
 
